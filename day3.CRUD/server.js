@@ -1,7 +1,7 @@
 const express = require("express");
 //middleware for accepting json data
 const app = express();
-
+//middleware for accepting json data
 app.use(express.json());
 
 let port = 400;
@@ -23,4 +23,3 @@ app.post('/create', (req, res)=>{
 
     res.send(users);
 })
-

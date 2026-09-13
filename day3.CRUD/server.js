@@ -1,7 +1,7 @@
 const express = require("express");
 
 const app = express();
-
+//middleware for accepting json data
 app.use(express.json());
 
 let port = 400;
@@ -15,9 +15,9 @@ app.listen(port, () =>{
     console.log(`Server is running on ${port}`);
 });
 
-//app.get('/', (req, res) =>{
-//    res.send(users)
-//})
+app.get('/', (req, res) =>{
+    res.send(users)
+})
 
 app.post('/create', (req, res)=>{
     let body = req.body;

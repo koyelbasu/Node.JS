@@ -12,10 +12,9 @@ let users = [{
 }];
 
 
-
-// app.get('/', (req, res) =>{
-    // res.send(users)
-// })
+ app.get('/', (req, res) =>{
+    res.send(users)
+ })
 
 app.post('/create', (req, res)=>{
     let body = req.body;
@@ -25,6 +24,3 @@ app.post('/create', (req, res)=>{
     res.send(users);
 })
 
-app.get('/user', (req, res) =>{
-    console.log("I am user");
-});

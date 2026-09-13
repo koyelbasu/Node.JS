@@ -15,9 +15,9 @@ app.listen(port, () =>{
     console.log(`Server is running on ${port}`);
 });
 
-app.get('/', (req, res) =>{
-    res.send(users)
-})
+//app.get('/', (req, res) =>{
+//    res.send(users)
+//})
 
 app.post('/create', (req, res)=>{
     let body = req.body;
@@ -25,4 +25,5 @@ app.post('/create', (req, res)=>{
     users.push(body);
 
     res.send(users);
-})
+})  
+ 

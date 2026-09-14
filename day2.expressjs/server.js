@@ -27,7 +27,11 @@ app.get('/users', (req, res) =>{
     res.send(` show the result ${user}`)
 })
 
+app.put("/update/:id", (req, res) =>{
+    let {id} = req.params;
 
+    let updateUser = user.map((val) => val.id === id ? { ...val.name}: val);
+})
 
 let port = 4000;
 

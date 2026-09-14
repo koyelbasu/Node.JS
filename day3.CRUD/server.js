@@ -16,6 +16,9 @@ let users = [{
     res.send(users)
  })
 
+ app.get('/users' , (req, res) => {
+    res.send(` show the result ${users}`)
+ })
 
  //post = create
 app.post('/create', (req, res)=>{
